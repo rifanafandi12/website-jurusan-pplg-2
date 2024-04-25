@@ -6,6 +6,20 @@
     padding: 0;
     margin: 0;
 }
+
+.about-us{
+    border: 5px solid #d3d3d305;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 10px beige;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 600px;
+}
+.about-us > p{
+    text-align: justify;
+    margin-top: 50px;
+}
+
 .bgcolor2{
     background-color:#5BC0F8;
 }
@@ -15,11 +29,12 @@
 }
 .bghome{
     background-color: #f3f3f3;
-   
+   border-radius: 5px;
 }
 
 .bghover:hover{
     background-color: #f3f3f3;
+    border-radius: 5px;
 }
 
 .icon{
