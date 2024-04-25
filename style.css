@@ -1,0 +1,117 @@
+/* body{
+    background-color: #c9c9c969;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.bgcolor2{
+    background-color:#5BC0F8;
+}
+
+.nav-item{
+    margin-left: 10px;
+}
+.bghome{
+    background-color: #f3f3f3;
+   
+}
+
+.bghover:hover{
+    background-color: #f3f3f3;
+}
+
+.icon{
+    margin-left: 10px;
+}
+.icon:hover{
+    color: #444;
+}
+.warna-judul{
+    font-family: 'Poppins', sans-serif;
+    color:aliceblue;
+}
+.isi{
+    background-color: #333;
+}
+.isi p{
+    font-size: 14px;
+}
+
+.footer{
+    border-top: 5px solid #5BC0F8;
+    background-color: #444;
+}
+.foot{
+    text-decoration: none;
+    color: white;
+}
+.foot:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* Sambutan */
+.bgsambutan{
+    background-color: #5BC0F8;
+   
+}
+
+.sambutan{
+    background: url(gambar/smkn1.jpg);
+    height: 200px;
+}
+.imsi{
+    padding-top: 60px;
+}
+.sambutan h2{
+    background-color: #333333b2; 
+    width: 230px;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: calibri;
+    font-size: 30px;
+}
+
+.borderraduisgambar{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #5BC0F8;
+}
+
+.nama-guru{
+    color: black; 
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+}
+.nama-guru:hover{
+   text-decoration: underline 1px solid white;
+}
+.font{
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 60px;
+      
+}
+
+.font2{
+    font-family: "Grechen Fuemen", cursive;
+    font-style: 30px;
+      
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Menyesuaikan video agar terisi penuh pada kontainer */
+    }
