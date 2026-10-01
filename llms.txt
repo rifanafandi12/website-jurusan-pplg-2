@@ -1,15 +1,14 @@
 # XII PPLG 2 — SMKN 1 Beringin
 
-Website resmi kelas XII PPLG 2, SMK Negeri 1 Beringin — angkatan 2024. Berisi
-profil kelas, struktur anggota, momen kenangan, dan informasi jurusan.
+Website resmi kelas XII PPLG 2, SMK Negeri 1 Beringin — angkatan 2024.
 
 ## Halaman
 
-- [Beranda](https://website-jurusan-pplg-2.vercel.app/): Slideshow, intro, highlight, galeri kenangan
-- [Sambutan](https://website-jurusan-pplg-2.vercel.app/sambutan): Surat dari kepala jurusan
-- [Pengajar](https://website-jurusan-pplg-2.vercel.app/pengajar): Daftar pengajar dengan kesan
-- [Profil](https://website-jurusan-pplg-2.vercel.app/profil): Timeline sejarah jurusan
-- [Struktur](https://website-jurusan-pplg-2.vercel.app/struktur): Susunan pengurus dan anggota
-- [Momen](https://website-jurusan-pplg-2.vercel.app/momen): Timeline momen kelas
-- [Tentang](https://website-jurusan-pplg-2.vercel.app/tentang): Penjelasan jurusan dan prospek kerja
-- [Angkatan](https://website-jurusan-pplg-2.vercel.app/angkatan): Halaman personal angkatan 2024
+- [Beranda](https://website-jurusan-pplg-2.vercel.app/)
+- [Sambutan](https://website-jurusan-pplg-2.vercel.app/sambutan)
+- [Pengajar](https://website-jurusan-pplg-2.vercel.app/pengajar)
+- [Profil](https://website-jurusan-pplg-2.vercel.app/profil)
+- [Struktur](https://website-jurusan-pplg-2.vercel.app/struktur)
+- [Momen](https://website-jurusan-pplg-2.vercel.app/momen)
+- [Tentang](https://website-jurusan-pplg-2.vercel.app/tentang)
+- [Angkatan](https://website-jurusan-pplg-2.vercel.app/angkatan)

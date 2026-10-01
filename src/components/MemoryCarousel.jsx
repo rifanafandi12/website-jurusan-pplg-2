@@ -287,6 +287,8 @@ export default function MemoryCarousel() {
               src={slide.src}
               alt={slide.caption}
               custom={direction}
+              width={1600}
+              height={1000}
               loading="lazy"
               decoding="async"
               initial={{ opacity: 0, x: direction > 0 ? 40 : -40 }}

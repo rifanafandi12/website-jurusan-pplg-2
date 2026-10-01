@@ -117,9 +117,11 @@ export default function AboutSection() {
           className="mt-20 relative rounded-lg overflow-hidden border border-ink-200 dark:border-ink-800"
         >
           <img
-            src="/gambar/dalam-kelas.JPG"
+            src="/gambar/dalam-kelas.webp"
             alt="Aktivitas jurusan PPLG"
             className="w-full h-auto"
+            width={800}
+            height={600}
           />
         </motion.div>
       </div>
