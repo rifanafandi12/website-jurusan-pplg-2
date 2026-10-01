@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://website-jurusan-pplg-2.vercel.app/sitemap.xml

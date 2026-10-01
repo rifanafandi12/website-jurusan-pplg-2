@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-5">
-              <img src="/gambar/Logo-RPL.png" alt="" className="w-9 h-9 object-contain" />
+              <img src="/gambar/Logo-RPL.webp" alt="" className="w-9 h-9 object-contain" />
               <div>
                 <p className="text-[13px] font-semibold text-ink-900 dark:text-ink-50">
                   PPLG 2
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-2 md:col-start-6">
-            <h4 className="text-[11px] font-medium tracking-[0.18em] uppercase text-ink-400 dark:text-ink-500 mb-5">
+            <h4 className="text-[11px] font-medium tracking-[0.18em] uppercase text-ink-500 dark:text-ink-400 mb-5">
               Navigasi
             </h4>
             <ul className="space-y-3 text-[13px]">
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-3">
-            <h4 className="text-[11px] font-medium tracking-[0.18em] uppercase text-ink-400 dark:text-ink-500 mb-5">
+            <h4 className="text-[11px] font-medium tracking-[0.18em] uppercase text-ink-500 dark:text-ink-400 mb-5">
               Kontak
             </h4>
             <ul className="space-y-4 text-[13px]">
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="text-[11px] font-medium tracking-[0.18em] uppercase text-ink-400 dark:text-ink-500 mb-5">
+            <h4 className="text-[11px] font-medium tracking-[0.18em] uppercase text-ink-500 dark:text-ink-400 mb-5">
               Tautan
             </h4>
             <ul className="space-y-3 text-[13px]">

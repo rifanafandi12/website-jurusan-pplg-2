@@ -39,7 +39,7 @@ export default function SambutanPage() {
             <div className="sticky top-28">
               <div className="aspect-[3/4] overflow-hidden rounded-md border border-ink-200 dark:border-ink-800 bg-ink-100 dark:bg-ink-900">
                 <img
-                  src="/gambar/irmala.png"
+                  src="/gambar/irmala.webp"
                   alt="Irmala, S.Kom"
                   className="w-full h-full object-cover"
                 />

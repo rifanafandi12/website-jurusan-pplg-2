@@ -28,6 +28,11 @@ export default function VideoHero() {
           key={slides[index]}
           src={slides[index]}
           alt=""
+          // Slide pertama: eager + fetchpriority high (LCP element)
+          // Slide lainnya: lazy + low priority
+          loading={index === 0 ? 'eager' : 'lazy'}
+          fetchPriority={index === 0 ? 'high' : 'low'}
+          decoding={index === 0 ? 'sync' : 'async'}
           initial={{ opacity: 0, scale: 1.08 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
@@ -57,14 +62,12 @@ export default function VideoHero() {
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.05]">
               Kelas yang tumbuh{' '}
-              <span className="font-serif italic text-accent-400">bersama</span>
-              .
+              <span className="font-serif italic text-accent-400">bersama</span>.
             </h1>
 
             <p className="mt-6 text-[15px] lg:text-base leading-relaxed text-white/70 max-w-xl">
-              Rekaman perjalanan tiga tahun di jurusan Pengembangan Perangkat
-              Lunak dan GIM — dari kelas, laboratorium, hingga momen di luar jam
-              pelajaran.
+              Rekaman perjalanan tiga tahun di jurusan Pengembangan Perangkat Lunak
+              dan GIM — dari kelas, laboratorium, hingga momen di luar jam pelajaran.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-6">
@@ -89,7 +92,7 @@ export default function VideoHero() {
         </div>
       </div>
 
-      {/* Indikator slide di kanan bawah */}
+      {/* Indikator slide */}
       <div className="hidden lg:flex absolute bottom-10 right-8 z-10 items-center gap-3">
         {slides.map((_, i) => (
           <button
@@ -97,9 +100,7 @@ export default function VideoHero() {
             onClick={() => setIndex(i)}
             aria-label={`Slide ${i + 1}`}
             className={`h-px transition-all duration-500 ${
-              i === index
-                ? 'w-8 bg-accent-500'
-                : 'w-4 bg-white/30 hover:bg-white/60'
+              i === index ? 'w-8 bg-accent-500' : 'w-4 bg-white/30 hover:bg-white/60'
             }`}
           />
         ))}

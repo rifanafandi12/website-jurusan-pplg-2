@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
@@ -7,16 +7,21 @@ import ScrollProgress from './components/ScrollProgress';
 import BackToTop from './components/BackToTop';
 import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
-import HomePage from './pages/HomePage';
-import SambutanPage from './pages/SambutanPage';
-import PengajarPage from './pages/PengajarPage';
-import StrukturPage from './pages/StrukturPage';
-import ProfilPage from './pages/ProfilPage';
-import AngkatanPage from './pages/AngkatanPage';
-import MomenPage from './pages/MomenPage';
-import NotFoundPage from './pages/NotFoundPage';
+
+// Komponen kecil — tetap eager load
+import Hero from './components/VideoHero';
 import AboutSection from './components/AboutSection';
 import JobList from './components/JobList';
+import MemoryCarousel from './components/MemoryCarousel';
+
+// Halaman — lazy load (hanya dimuat saat dikunjungi)
+const SambutanPage = lazy(() => import('./pages/SambutanPage'));
+const PengajarPage = lazy(() => import('./pages/PengajarPage'));
+const StrukturPage = lazy(() => import('./pages/StrukturPage'));
+const ProfilPage = lazy(() => import('./pages/ProfilPage'));
+const AngkatanPage = lazy(() => import('./pages/AngkatanPage'));
+const MomenPage = lazy(() => import('./pages/MomenPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -24,6 +29,17 @@ function ScrollToTop() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
+}
+
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <AboutSection />
+      <JobList />
+      <MemoryCarousel />
+    </>
+  );
 }
 
 function TentangPage() {
@@ -35,22 +51,29 @@ function TentangPage() {
   );
 }
 
+// Fallback saat lazy load — minimal, tidak ada layout shift
+function PageLoader() {
+  return <div className="min-h-screen" aria-hidden="true" />;
+}
+
 function AnimatedRoutes() {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
-        <Route path="/sambutan" element={<PageTransition><SambutanPage /></PageTransition>} />
-        <Route path="/pengajar" element={<PageTransition><PengajarPage /></PageTransition>} />
-        <Route path="/profil" element={<PageTransition><ProfilPage /></PageTransition>} />
-        <Route path="/struktur" element={<PageTransition><StrukturPage /></PageTransition>} />
-        <Route path="/momen" element={<PageTransition><MomenPage /></PageTransition>} />
-        <Route path="/angkatan" element={<PageTransition><AngkatanPage /></PageTransition>} />
-        <Route path="/tentang" element={<PageTransition><TentangPage /></PageTransition>} />
-        <Route path="*" element={<PageTransition><NotFoundPage /></PageTransition>} />
-      </Routes>
-    </AnimatePresence>
+    <Suspense fallback={<PageLoader />}>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
+          <Route path="/sambutan" element={<PageTransition><SambutanPage /></PageTransition>} />
+          <Route path="/pengajar" element={<PageTransition><PengajarPage /></PageTransition>} />
+          <Route path="/profil" element={<PageTransition><ProfilPage /></PageTransition>} />
+          <Route path="/struktur" element={<PageTransition><StrukturPage /></PageTransition>} />
+          <Route path="/momen" element={<PageTransition><MomenPage /></PageTransition>} />
+          <Route path="/angkatan" element={<PageTransition><AngkatanPage /></PageTransition>} />
+          <Route path="/tentang" element={<PageTransition><TentangPage /></PageTransition>} />
+          <Route path="*" element={<PageTransition><NotFoundPage /></PageTransition>} />
+        </Routes>
+      </AnimatePresence>
+    </Suspense>
   );
 }
 

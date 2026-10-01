@@ -286,11 +286,15 @@ export default function MemoryCarousel() {
               key={slide.src}
               src={slide.src}
               alt={slide.caption}
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3 }}
-              onClick={(e) => e.stopPropagation()}
-              className="max-h-[85vh] max-w-[90vw] object-contain"
+              custom={direction}
+              loading="lazy"
+              decoding="async"
+              initial={{ opacity: 0, x: direction > 0 ? 40 : -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: direction > 0 ? -40 : 40 }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              onClick={() => setLightbox(true)}
+              className="absolute inset-0 w-full h-full object-cover cursor-zoom-in"
             />
 
             <button
