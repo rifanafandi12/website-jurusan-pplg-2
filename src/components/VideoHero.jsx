@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
 
 const slides = [
-  '/slide/slide1.JPG',
-  '/slide/slide4.JPG',
-  '/slide/slide11.JPG',
-  '/slide/slide13.JPG',
-  '/slide/slide12.JPG',
+  '/slide/slide1.webp',
+  '/slide/slide4.webp',
+  '/slide/slide11.webp',
+  '/slide/slide13.webp',
+  '/slide/slide12.webp',
 ];
 
 export default function VideoHero() {

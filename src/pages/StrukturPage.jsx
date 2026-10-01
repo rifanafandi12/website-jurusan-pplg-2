@@ -7,17 +7,17 @@ const pengurus = [
   {
     nama: 'Alfajar',
     jabatan: 'Ketua Kelas',
-    foto: '/gambar/stuktur/alfajar-ketua.jpg',
+    foto: '/gambar/stuktur/alfajar-ketua.webp',
   },
   {
     nama: 'Yuli Safira',
     jabatan: 'Wali Kelas',
-    foto: '/gambar/stuktur/yuli-walkes.jpg',
+    foto: '/gambar/stuktur/yuli-walkes.webp',
   },
   {
     nama: 'Irba',
     jabatan: 'Wakil Ketua',
-    foto: '/gambar/stuktur/irba-wakel.jpg',
+    foto: '/gambar/stuktur/irba-wakel.webp',
   },
 ];
 
@@ -25,50 +25,50 @@ const sekretariat = [
   {
     nama: 'Intan',
     jabatan: 'Sekretaris',
-    foto: '/gambar/stuktur/intan-serketasris.jpg',
+    foto: '/gambar/stuktur/intan-serketasris.webp',
   },
   {
     nama: 'Kosong',
     jabatan: 'Wakil Sekretaris',
-    foto: '/gambar/stuktur/gambar-kosong.jpg',
+    foto: '/gambar/stuktur/gambar-kosong.webp',
   },
   {
     nama: 'Suci',
     jabatan: 'Bendahara',
-    foto: '/gambar/stuktur/suci-bendahara.jpg',
+    foto: '/gambar/stuktur/suci-bendahara.webp',
   },
 ];
 
 const anggota = [
-  { nama: 'Ali', foto: '/gambar/stuktur/ali.jpg' },
-  { nama: 'Alya', foto: '/gambar/stuktur/alya.jpg' },
-  { nama: 'Arbi', foto: '/gambar/stuktur/arbi.jpg' },
-  { nama: 'Azimi', foto: '/gambar/stuktur/azimi.jpg' },
-  { nama: 'Chelsea', foto: '/gambar/stuktur/chelsea.jpg' },
-  { nama: 'Diva', foto: '/gambar/stuktur/diva.jpg' },
-  { nama: 'Fariz', foto: '/gambar/stuktur/fariz.jpg' },
-  { nama: 'Febri', foto: '/gambar/stuktur/febri.jpg' },
-  { nama: 'Ghatfan', foto: '/gambar/stuktur/ghatfan.jpg' },
-  { nama: 'Habibi', foto: '/gambar/stuktur/habibi.jpg' },
-  { nama: 'Haikal', foto: '/gambar/stuktur/haikal.jpg' },
-  { nama: 'Hawa', foto: '/gambar/stuktur/hawa.jpg' },
-  { nama: 'Hawwa', foto: '/gambar/stuktur/hawwa.jpg' },
-  { nama: 'Iqbal', foto: '/gambar/stuktur/iqbal.jpg' },
-  { nama: 'Madhun', foto: '/gambar/stuktur/madhun.jpg' },
-  { nama: 'Mifta', foto: '/gambar/stuktur/mifta.jpg' },
-  { nama: 'Muda', foto: '/gambar/stuktur/muda.jpg' },
-  { nama: 'Neyza', foto: '/gambar/stuktur/neyza.jpg' },
-  { nama: 'Nia', foto: '/gambar/stuktur/nia.jpg' },
-  { nama: 'Pusvita', foto: '/gambar/stuktur/pusvita.jpg' },
-  { nama: 'Reza', foto: '/gambar/stuktur/reza.jpg' },
-  { nama: 'Rifan', foto: '/gambar/stuktur/rifan.jpg' },
-  { nama: 'Rindu', foto: '/gambar/stuktur/rindu.jpg' },
-  { nama: 'Risky', foto: '/gambar/stuktur/risky.jpg' },
-  { nama: 'Sandy', foto: '/gambar/stuktur/sandy.jpg' },
-  { nama: 'Septiana', foto: '/gambar/stuktur/septiana.jpg' },
-  { nama: 'Tasya', foto: '/gambar/stuktur/tasya.jpg' },
-  { nama: 'Tri', foto: '/gambar/stuktur/tri.jpg' },
-  { nama: 'Yuda', foto: '/gambar/stuktur/yuda.jpg' },
+  { nama: 'Ali', foto: '/gambar/stuktur/ali.webp' },
+  { nama: 'Alya', foto: '/gambar/stuktur/alya.webp' },
+  { nama: 'Arbi', foto: '/gambar/stuktur/arbi.webp' },
+  { nama: 'Azimi', foto: '/gambar/stuktur/azimi.webp' },
+  { nama: 'Chelsea', foto: '/gambar/stuktur/chelsea.webp' },
+  { nama: 'Diva', foto: '/gambar/stuktur/diva.webp' },
+  { nama: 'Fariz', foto: '/gambar/stuktur/fariz.webp' },
+  { nama: 'Febri', foto: '/gambar/stuktur/febri.webp' },
+  { nama: 'Ghatfan', foto: '/gambar/stuktur/ghatfan.webp' },
+  { nama: 'Habibi', foto: '/gambar/stuktur/habibi.webp' },
+  { nama: 'Haikal', foto: '/gambar/stuktur/haikal.webp' },
+  { nama: 'Hawa', foto: '/gambar/stuktur/hawa.webp' },
+  { nama: 'Hawwa', foto: '/gambar/stuktur/hawwa.webp' },
+  { nama: 'Iqbal', foto: '/gambar/stuktur/iqbal.webp' },
+  { nama: 'Madhun', foto: '/gambar/stuktur/madhun.webp' },
+  { nama: 'Mifta', foto: '/gambar/stuktur/mifta.webp' },
+  { nama: 'Muda', foto: '/gambar/stuktur/muda.webp' },
+  { nama: 'Neyza', foto: '/gambar/stuktur/neyza.webp' },
+  { nama: 'Nia', foto: '/gambar/stuktur/nia.webp' },
+  { nama: 'Pusvita', foto: '/gambar/stuktur/pusvita.webp' },
+  { nama: 'Reza', foto: '/gambar/stuktur/reza.webp' },
+  { nama: 'Rifan', foto: '/gambar/stuktur/rifan.webp' },
+  { nama: 'Rindu', foto: '/gambar/stuktur/rindu.webp' },
+  { nama: 'Risky', foto: '/gambar/stuktur/risky.webp' },
+  { nama: 'Sandy', foto: '/gambar/stuktur/sandy.webp' },
+  { nama: 'Septiana', foto: '/gambar/stuktur/septiana.webp' },
+  { nama: 'Tasya', foto: '/gambar/stuktur/tasya.webp' },
+  { nama: 'Tri', foto: '/gambar/stuktur/tri.webp' },
+  { nama: 'Yuda', foto: '/gambar/stuktur/yuda.webp' },
 ];
 
 function PersonCard({ person, index, onClick }) {
@@ -126,7 +126,7 @@ export default function StrukturPage() {
       <main className="bg-ink-50 dark:bg-ink-950 transition-colors duration-300">
         <div className="relative h-64 lg:h-80 overflow-hidden">
           <img
-            src="/slide/slide17.JPG"
+            src="/slide/slide17.webp"
             alt=""
             className="w-full h-full object-cover object-top"
           />

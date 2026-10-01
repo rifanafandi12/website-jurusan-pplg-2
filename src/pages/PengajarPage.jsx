@@ -26,32 +26,32 @@ const pengajar = [
     nama: 'Yuli Safira, S.Kom',
     bidang: 'Wali Kelas XII PPLG 2',
     kesan: 'Sabar menghadapi kelas paling berisik di angkatan.',
-    foto: '/gambar/yuli.jpg',
+    foto: '/gambar/yuli.webp',
   },
   {
     nama: 'Vevy Sisnia',
     bidang: 'Pengajar Produktif',
     kesan: 'Selalu punya cara membuat materi yang rumit jadi masuk akal.',
-    foto: '/gambar/vevy.jpg',
+    foto: '/gambar/vevy.webp',
   },
   {
     nama: 'Ilmiati, M.Kom',
     bidang: 'Pengajar Produktif',
     kesan: 'Menyenangkan, kadang sulit ditebak, tapi selalu membekas.',
-    foto: '/gambar/pp.jpg',
+    foto: '/gambar/pp.webp',
   },
   {
     nama: 'Mr. Sinabutar',
     bidang: 'Pengajar Produktif',
     kesan: 'Suaranya mengisi ruang kelas lebih baik daripada bel sekolah.',
-    foto: '/gambar/pp.jpg',
+    foto: '/gambar/pp.webp',
   },
   {
     nama: 'Indra Edy Syahputra, M.Kom',
     bidang: 'Pengajar Produktif',
     kesan:
       'Menunjukkan bahwa teknologi bukan cuma soal kode, tapi juga manusia.',
-    foto: '/gambar/pp.jpg',
+    foto: '/gambar/pp.webp',
   },
 ];
 
@@ -77,7 +77,7 @@ export default function PengajarPage() {
         {/* Header foto */}
         <div className="relative h-64 lg:h-80 overflow-hidden">
           <img
-            src="/slide/slide11.JPG"
+            src="/slide/slide11.webp"
             alt=""
             className="w-full h-full object-cover object-center"
           />

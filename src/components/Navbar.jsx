@@ -67,7 +67,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/gambar/Logo-RPL.png"
+              src="/gambar/Logo-RPL.webp"
               alt="Logo RPL"
               className="w-9 h-9 object-contain"
             />
