@@ -8,13 +8,13 @@ const pengajar = [
     nama: 'Anggun Desrivawany, S.Pd',
     bidang: 'Kepala Jurusan',
     kesan: 'Beliau yang pertama membuka pintu jurusan ini untuk kami.',
-    foto: '/gambar/anggun.png',
+    foto: '/gambar/anggun.webp',
   },
   {
     nama: 'Irmala, S.Kom',
     bidang: 'Ketua Kompetensi Keahlian PPLG',
     kesan: 'Tenang, tegas, dan selalu punya cara agar kelas kembali fokus.',
-    foto: '/gambar/irmala.png',
+    foto: '/gambar/irmala.webp',
   },
   {
     nama: 'Sumarno, S.Kom',
