@@ -20,7 +20,7 @@ const pengajar = [
     nama: 'Sumarno, S.Kom',
     bidang: 'Pengajar Pemrograman',
     kesan: 'Mengajarkan bahwa error bukan akhir dunia, tapi awal dari belajar.',
-    foto: '/gambar/sumarno.jpeg',
+    foto: '/gambar/sumarno.webp',
   },
   {
     nama: 'Yuli Safira, S.Kom',
