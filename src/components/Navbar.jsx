@@ -6,6 +6,7 @@ import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
   { name: 'Beranda', path: '/' },
+  { name: 'Angkatan', path: '/angkatan' },
   { name: 'Sambutan', path: '/sambutan' },
   { name: 'Pengajar', path: '/pengajar' },
   { name: 'Profil', path: '/profil' },

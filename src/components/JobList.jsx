@@ -86,7 +86,10 @@ export default function JobList() {
       <div className="absolute inset-0 pointer-events-none opacity-[0.4] dark:opacity-[0.15]">
         <div className="max-w-6xl mx-auto h-full px-6 lg:px-8 grid grid-cols-12">
           {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="border-r border-ink-200/50 dark:border-ink-800/50 last:border-r-0" />
+            <div
+              key={i}
+              className="border-r border-ink-200/50 dark:border-ink-800/50 last:border-r-0"
+            />
           ))}
         </div>
       </div>
@@ -116,8 +119,8 @@ export default function JobList() {
           </div>
           <div className="lg:max-w-xs lg:text-right">
             <p className="text-[13px] leading-[1.75] text-ink-500 dark:text-ink-400">
-              Dua belas bidang yang dapat ditekuni setelah menyelesaikan studi di
-              jurusan PPLG. Setiap bidang memiliki jalur karier yang jelas di
+              Dua belas bidang yang dapat ditekuni setelah menyelesaikan studi
+              di jurusan PPLG. Setiap bidang memiliki jalur karier yang jelas di
               industri teknologi informasi.
             </p>
           </div>

@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import VideoHero from '../components/VideoHero';
 import HomeIntro from '../components/HomeIntro';
 import HomeHighlight from '../components/HomeHighlight';
@@ -10,9 +9,7 @@ export default function HomePage() {
       <VideoHero />
       <HomeIntro />
       <HomeHighlight />
-      <div id="kenangan">
-        <MemoryCarousel />
-      </div>
+      <MemoryCarousel />
     </>
   );
 }

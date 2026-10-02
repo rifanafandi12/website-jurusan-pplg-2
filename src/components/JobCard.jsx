@@ -7,7 +7,11 @@ export default function JobCard({ title, description, tags, index }) {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.5, delay: (index % 3) * 0.06, ease: [0.22, 1, 0.36, 1] }}
+      transition={{
+        duration: 0.5,
+        delay: (index % 3) * 0.06,
+        ease: [0.22, 1, 0.36, 1],
+      }}
       className="group relative flex flex-col p-7 bg-white dark:bg-ink-950 border border-ink-200 dark:border-ink-800 rounded-sm hover:border-ink-900 dark:hover:border-ink-50 hover:-translate-y-0.5 transition-all duration-300 ease-out overflow-hidden"
     >
       {/* Aksen garis kiri tipis — muncul saat hover */}
@@ -42,8 +46,13 @@ export default function JobCard({ title, description, tags, index }) {
       {tags && tags.length > 0 && (
         <div className="pt-5 mt-5 border-t border-ink-100 dark:border-ink-900 flex flex-wrap gap-x-3 gap-y-1">
           {tags.map((tag, i) => (
-            <span key={tag} className="flex items-center gap-3 text-[11px] font-medium tracking-wide text-ink-400 dark:text-ink-500">
-              {i > 0 && <span className="w-1 h-1 rounded-full bg-ink-300 dark:bg-ink-700" />}
+            <span
+              key={tag}
+              className="flex items-center gap-3 text-[11px] font-medium tracking-wide text-ink-400 dark:text-ink-500"
+            >
+              {i > 0 && (
+                <span className="w-1 h-1 rounded-full bg-ink-300 dark:bg-ink-700" />
+              )}
               {tag}
             </span>
           ))}

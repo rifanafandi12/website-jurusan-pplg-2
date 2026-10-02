@@ -20,6 +20,14 @@ export default function VideoHero() {
     return () => clearInterval(t);
   }, []);
 
+  const scrollToKenangan = () => {
+    const target = document.getElementById('kenangan');
+    if (target) {
+      const y = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-ink-950">
       {/* Slideshow dengan efek Ken Burns */}
@@ -27,11 +35,9 @@ export default function VideoHero() {
         <motion.img
           key={slides[index]}
           src={slides[index]}
+          alt=""
           width={1920}
           height={1080}
-          alt=""
-          // Slide pertama: eager + fetchpriority high (LCP element)
-          // Slide lainnya: lazy + low priority
           loading={index === 0 ? 'eager' : 'lazy'}
           fetchPriority={index === 0 ? 'high' : 'low'}
           decoding={index === 0 ? 'sync' : 'async'}
@@ -75,16 +81,16 @@ export default function VideoHero() {
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-6">
-              <a
-                href="#kenangan"
-                className="group inline-flex items-center gap-2 text-[13px] font-medium text-white border-b border-white/60 pb-1 hover:border-accent-400 hover:text-accent-400 transition-colors"
+              <button
+                onClick={scrollToKenangan}
+                className="group inline-flex items-center gap-2 text-[13px] font-medium text-white border-b border-white/60 pb-1 hover:border-accent-400 hover:text-accent-400 transition-colors cursor-pointer"
               >
                 Lihat kenangan kelas
                 <ArrowDown
                   size={14}
                   className="group-hover:translate-y-0.5 transition-transform"
                 />
-              </a>
+              </button>
               <a
                 href="/tentang"
                 className="text-[13px] font-medium text-white/60 hover:text-white transition-colors"

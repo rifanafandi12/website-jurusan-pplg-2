@@ -8,7 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-5">
-              <img src="/gambar/Logo-RPL.webp" alt="" className="w-9 h-9 object-contain" />
+              <img
+                src="/gambar/Logo-RPL.webp"
+                alt=""
+                className="w-9 h-9 object-contain"
+              />
               <div>
                 <p className="text-[13px] font-semibold text-ink-900 dark:text-ink-50">
                   PPLG 2
@@ -19,8 +23,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[13px] leading-relaxed text-ink-500 dark:text-ink-400 max-w-xs">
-              Kelas XII PPLG 2. Kenangan, keceriaan, dan persahabatan yang tersimpan
-              dalam satu perjalanan.
+              Kelas XII PPLG 2. Kenangan, keceriaan, dan persahabatan yang
+              tersimpan dalam satu perjalanan.
             </p>
           </div>
 
@@ -56,13 +60,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4 text-[13px]">
               <li className="flex gap-3">
-                <MapPin size={14} className="text-ink-400 shrink-0 mt-1" strokeWidth={1.5} />
+                <MapPin
+                  size={14}
+                  className="text-ink-400 shrink-0 mt-1"
+                  strokeWidth={1.5}
+                />
                 <span className="text-ink-600 dark:text-ink-300 leading-relaxed">
-                  Jl. Pendidikan No.3, Emplasmen Kuala Namu, Beringin, Deli Serdang
+                  Jl. Pendidikan No.3, Emplasmen Kuala Namu, Beringin, Deli
+                  Serdang
                 </span>
               </li>
               <li className="flex gap-3">
-                <Mail size={14} className="text-ink-400 shrink-0 mt-1" strokeWidth={1.5} />
+                <Mail
+                  size={14}
+                  className="text-ink-400 shrink-0 mt-1"
+                  strokeWidth={1.5}
+                />
                 <a
                   href="mailto:muhammadrifanafandi@gmail.com"
                   className="text-ink-600 dark:text-ink-300 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
@@ -71,7 +84,11 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex gap-3">
-                <Instagram size={14} className="text-ink-400 shrink-0 mt-1" strokeWidth={1.5} />
+                <Instagram
+                  size={14}
+                  className="text-ink-400 shrink-0 mt-1"
+                  strokeWidth={1.5}
+                />
                 <a
                   href="https://www.instagram.com/_softring2/"
                   target="_blank"
@@ -136,7 +153,7 @@ export default function Footer() {
 
         <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[12px] text-ink-400 dark:text-ink-500">
           <p>© 2024 Pengembangan Perangkat Lunak dan GIM — SMKN 1 Beringin</p>
-          <p>Disusun oleh XII PPLG 2</p>
+          <p>Disusun oleh M Rifan Afandi</p>
         </div>
       </div>
     </footer>

@@ -62,15 +62,78 @@ function AnimatedRoutes() {
     <Suspense fallback={<PageLoader />}>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
-          <Route path="/sambutan" element={<PageTransition><SambutanPage /></PageTransition>} />
-          <Route path="/pengajar" element={<PageTransition><PengajarPage /></PageTransition>} />
-          <Route path="/profil" element={<PageTransition><ProfilPage /></PageTransition>} />
-          <Route path="/struktur" element={<PageTransition><StrukturPage /></PageTransition>} />
-          <Route path="/momen" element={<PageTransition><MomenPage /></PageTransition>} />
-          <Route path="/angkatan" element={<PageTransition><AngkatanPage /></PageTransition>} />
-          <Route path="/tentang" element={<PageTransition><TentangPage /></PageTransition>} />
-          <Route path="*" element={<PageTransition><NotFoundPage /></PageTransition>} />
+          <Route
+            path="/"
+            element={
+              <PageTransition>
+                <HomePage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/sambutan"
+            element={
+              <PageTransition>
+                <SambutanPage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/pengajar"
+            element={
+              <PageTransition>
+                <PengajarPage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/profil"
+            element={
+              <PageTransition>
+                <ProfilPage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/struktur"
+            element={
+              <PageTransition>
+                <StrukturPage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/momen"
+            element={
+              <PageTransition>
+                <MomenPage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/angkatan"
+            element={
+              <PageTransition>
+                <AngkatanPage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/tentang"
+            element={
+              <PageTransition>
+                <TentangPage />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <PageTransition>
+                <NotFoundPage />
+              </PageTransition>
+            }
+          />
         </Routes>
       </AnimatePresence>
     </Suspense>

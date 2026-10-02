@@ -136,7 +136,10 @@ export default function MemoryCarousel() {
   const slide = slides[index];
 
   return (
-    <section className="py-24 lg:py-32 bg-white dark:bg-ink-950 border-t border-ink-200 dark:border-ink-800 transition-colors duration-300">
+    <section
+      id="kenangan"
+      className="py-24 lg:py-32 bg-white dark:bg-ink-950 border-t border-ink-200 dark:border-ink-800 transition-colors duration-300 scroll-mt-20"
+    >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
